@@ -17,24 +17,24 @@ const SignUp = () => {
             <p className='w-[644px] text-[#767676] text-base mt-[127px]'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.</p>
             <div className='mt-[120px]'>
                 <Tittle tittle={"Your Personal Details"} />
-                <Flex className={"mt-11"}>
+                <Flex className={"mt-11 gap-4"}>
                     <Flex className={"flex-col"}>
                         <label for="">First Name</label>
-                        <InputField inputType={"text"} placeholder={"First Name"} />
+                        <InputField className={"w-[580px]"} inputType={"text"} placeholder={"First Name"} />
                     </Flex>
                     <Flex className={"flex-col"}>
                         <label for="">Last Name</label>
-                        <InputField inputType={"text"} placeholder={"Last Name"} />
+                        <InputField className={"w-[580px]"} inputType={"text"} placeholder={"Last Name"} />
                     </Flex>
                 </Flex>
                 <Flex className={"mt-6"}>
                     <Flex className={"flex-col"}>
                         <label for="">Email address</label>
-                        <InputField inputType={"email"} placeholder={"company@domain.com"} />
+                        <InputField className={"w-[580px]"} inputType={"email"} placeholder={"company@domain.com"} />
                     </Flex>
                     <Flex className={"flex-col"}>
                         <label for="">Telephone</label>
-                        <InputField inputType={"tel"} placeholder={"Your phone number"} />
+                        <InputField className={"w-[580px]"} inputType={"tel"} placeholder={"Your phone number"} />
                     </Flex>
                 </Flex>
             </div>
@@ -43,21 +43,21 @@ const SignUp = () => {
                 <Flex className={"mt-10"}>
                     <Flex className={"flex-col"}>
                         <label for="">Address 1</label>
-                        <InputField inputType={"text"} placeholder={"4279 Zboncak Port Suite 6212"} />
+                        <InputField className={"w-[580px]"} inputType={"text"} placeholder={"4279 Zboncak Port Suite 6212"} />
                     </Flex>
                     <Flex className={"flex-col"}>
                         <label for="">Address 2</label>
-                        <InputField inputType={"text"} placeholder={"-"} />
-                    </Flex>
+                        <InputField className={"w-[580px]"} inputType={"text"} placeholder={"-"} />
+                    </Flex> 
                 </Flex>
                 <Flex className={"mt-6"}>
                     <Flex className={"flex-col"}>
                         <label for="">City</label>
-                        <InputField inputType={"text"} placeholder={"Your city"} />
+                        <InputField className={"w-[580px]"} inputType={"text"} placeholder={"Your city"} />
                     </Flex>
                     <Flex className={"flex-col"}>
                         <label for="">Post Code</label>
-                        <InputField inputType={"number"} placeholder={"05228"} />
+                        <InputField className={"w-[580px]"} inputType={"number"} placeholder={"05228"} />
                     </Flex>
                 </Flex>
                 <Flex className={"mt-6"}>
@@ -88,11 +88,11 @@ const SignUp = () => {
             <Flex className={"mt-10"}>
                     <Flex className={"flex-col"}>
                         <label for="">Password</label>
-                        <InputField inputType={"password"} placeholder={"Password"} />
+                        <InputField className={"w-[580px]"} inputType={"password"} placeholder={"Password"} />
                     </Flex>
                     <Flex className={"flex-col"}>
                         <label for="">Repeat Password</label>
-                        <InputField inputType={"password"} placeholder={"Repeat password"} />
+                        <InputField className={"w-[580px]"} inputType={"password"} placeholder={"Repeat password"} />
                     </Flex>
                 </Flex>
             

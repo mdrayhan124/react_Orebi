@@ -9,7 +9,7 @@ import Button from '../components/Layouts/Button'
 
 const About = () => {
   return (
-    <Container>
+    <Container className={"mt-10"}>
       <section className='font-dm'>
       <BreadCrumb
           path={window.location.pathname}

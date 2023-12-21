@@ -49,7 +49,7 @@ const NavHeader = () => {
         });
     }, [showcart]);
     return (
-        <section className='bg-[#F5F5F3] p-[25px] '>
+        <section className='bg-[#eb8334] p-[25px] '>
             <Container>
                 <Flex className={'justify-between items-center'}>
                     <Dropdown className={"flex gap-3 items-center lg:w-[10%] relative"} dRef={catagory}>
@@ -67,9 +67,13 @@ const NavHeader = () => {
                             )
                         }
                     </Dropdown>
-                    <div className='lg:w-[40%]'>
-                        <input type="text" placeholder='Search Products' className='py-4 px-5 sm:w-[350px] md:w-[400px] outline-transparent' />
-                        <FcSearch className='inline-block sm:ml-[-40px] lg:ml-[50px] cursor-pointer' />
+                    <div className="lg:w-[40%] bg-white rounded-full p-4 flex items-center shadow-md">
+                        <input
+                            type="text"
+                            placeholder="Search Products"
+                            className="flex-grow px-4 outline-none"
+                        />
+                        <FcSearch className="text-gray-500 cursor-pointer" />
                     </div>
                     <Flex className={'lg:gap-x-10 lg:w-[7%] text-xl'}>
                         <Dropdown className={'flex md:gap-x-1 item-center relative'} dRef={user}>
@@ -89,24 +93,24 @@ const NavHeader = () => {
                             {
                                 showcart && (
                                     <div className='absolute top-10 right-0 font-dm z-10'>
-                                <Flex className={"w-[360px] px-5 py-5 bg-[#F5F5F3] items-center text-md text-bold text-[#262626] justify-between"}>
-                                    <div className=''>
-                                        <Img src={cartImg} className={"w-20 h-20"} />
+                                        <Flex className={"w-[360px] px-5 py-5 bg-[#F5F5F3] items-center text-md text-bold text-[#262626] justify-between"}>
+                                            <div className=''>
+                                                <Img src={cartImg} className={"w-20 h-20"} />
+                                            </div>
+                                            <div>
+                                                <p>Black mdart Watch</p>
+                                                <p>$44.00</p>
+                                            </div>
+                                            <ImCross />
+                                        </Flex>
+                                        <div className='py-4 px-5 bg-white'>
+                                            <h5 className='text-[#767676] text-md'>Subtotal <span className='text-[16px] font-bold text-[#262626]'> $44.00</span> </h5>
+                                            <div className='flex justify-between'>
+                                                <Button btnLinkAdd={"/Chart"} btnName={"View Cart"} className={"py-4 px-10 border font-bold text-md hover:bg-black hover:text-white transition-all duration-300 ease-in border-black mt-3 inline-block"} />
+                                                <Button btnLinkAdd={"/"} btnName={"Checkout"} className={"py-4 px-10 border font-bold text-md hover:bg-black hover:text-white transition-all duration-300 ease-in border-black mt-3 inline-block"} />
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <p>Black mdart Watch</p>
-                                        <p>$44.00</p>
-                                    </div>
-                                    <ImCross />
-                                </Flex>
-                                <div className='py-4 px-5 bg-white'>
-                                    <h5 className='text-[#767676] text-md'>Subtotal <span className='text-[16px] font-bold text-[#262626]'> $44.00</span> </h5>
-                                    <div className='flex justify-between'>
-                                        <Button btnLinkAdd={"/Chart"} btnName={"View Cart"} className={"py-4 px-10 border font-bold text-md hover:bg-black hover:text-white transition-all duration-300 ease-in border-black mt-3 inline-block"} />
-                                        <Button btnLinkAdd={"/"} btnName={"Checkout"} className={"py-4 px-10 border font-bold text-md hover:bg-black hover:text-white transition-all duration-300 ease-in border-black mt-3 inline-block"} />
-                                    </div>
-                                </div>
-                            </div>
                                 )
                             }
                         </Dropdown>

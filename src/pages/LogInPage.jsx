@@ -21,11 +21,11 @@ const LogInPage = () => {
         <Flex className={"mt-11"}>
           <div className='flex flex-col'>
             <label form='' className='bm-[14px]'>Email address</label>
-            <InputField inputType={"text"} placeholder={"company@domain.com"} />
+            <InputField className={"w-[580px]"} inputType={"text"} placeholder={"company@domain.com"} />
           </div>
           <div className='flex flex-col'>
             <label form=''>Password</label>
-            <InputField inputType={"password"} placeholder={"******"} />
+            <InputField className={"w-[580px]"} inputType={"password"} placeholder={"******"} />
           </div>
         </Flex>
         <Button className={"inline-block border border-[#2B2B2B] capitalize px-20 py-4 mt-8"} btnName={"Log in"}/>
