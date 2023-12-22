@@ -81,7 +81,7 @@ const NavHeader = () => {
                             <IoMdArrowDropdown />
                             {
                                 showUser && (
-                                    <UnorderLIst className={"w-[200px] bg-white text-[#262626] absolute top-10 left-[-165px] text-md z-10"}>
+                                    <UnorderLIst className={"w-[200px] border border-black bg-[#eb8334] text-[#262626] absolute top-10 left-[-165px] text-md z-10"}>
                                         <ListItem aLinkAdd={"/SignUp"} aLinkClass={"w-[200px] inline-block"} itemName={"My Account"} className={"py-4 px-14 hover:bg-black hover:text-white border-black transition-all duration-300 ease-in"} />
                                         <ListItem aLinkAdd={"/LogInPage"} aLinkClass={"w-[200px] inline-block"} itemName={"Log in"} className={"py-4 px-14 hover:bg-black hover:text-white border-black  transition-all duration-300 ease-in"} />
                                     </UnorderLIst>
@@ -92,8 +92,8 @@ const NavHeader = () => {
                             <FaShoppingCart />
                             {
                                 showcart && (
-                                    <div className='absolute top-10 right-0 font-dm z-10'>
-                                        <Flex className={"w-[360px] px-5 py-5 bg-[#F5F5F3] items-center text-md text-bold text-[#262626] justify-between"}>
+                                    <div className='absolute top-10 right-0 font-dm z-10 border border-black'>
+                                        <Flex className={"w-[360px] px-5 py-5 bg-[#eb8334] items-center text-md text-bold text-[#262626] justify-between"}>
                                             <div className=''>
                                                 <Img src={cartImg} className={"w-20 h-20"} />
                                             </div>
@@ -103,7 +103,7 @@ const NavHeader = () => {
                                             </div>
                                             <ImCross />
                                         </Flex>
-                                        <div className='py-4 px-5 bg-white'>
+                                        <div className='py-4 px-5 bg-[#eb8334]'>
                                             <h5 className='text-[#767676] text-md'>Subtotal <span className='text-[16px] font-bold text-[#262626]'> $44.00</span> </h5>
                                             <div className='flex justify-between'>
                                                 <Button btnLinkAdd={"/Chart"} btnName={"View Cart"} className={"py-4 px-10 border font-bold text-md hover:bg-black hover:text-white transition-all duration-300 ease-in border-black mt-3 inline-block"} />

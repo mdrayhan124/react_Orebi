@@ -8,7 +8,7 @@ import { FaArrowRotateLeft } from 'react-icons/fa6';
 
 const Information = () => {
     return (
-        <Container className={"font-dm py-8"}>
+        <Container className={"font-dm py-8 bg-[#eb8334]"}>
             <Flex className={"justify-between"}>
                 <div className='flex items-center gap-[15px]'>
                 <RiNumber2 className='text-[20px] ' />

@@ -36,7 +36,7 @@ const Pagination = ({ itemsPerPage, data }) => {
             <ReactPaginate
                 className="flex gap-4 mt-10"
                 pageLinkClassName="inline-block py-2 px-4"
-                activeLinkClassName="bg-black text-white"
+                activeLinkClassName="bg-[#eb8334] text-white"
                 breakLabel="..."
                 nextLabel=""
                 onPageChange={handlePageClick}
